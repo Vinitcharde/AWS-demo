@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luxury Watch-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>Luxury Watch</h2>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <div class="text">
+        <h1>Luxury Timepieces</h1>
+        <p>Crafted for Excellence</p>
+
+        <button id="btn">Shop Now</button>
+    </div>
+
+    <div class="image">
+        <img src="images/watch.jpg" alt="Watch">
+    </div>
+
+</section>
+
+<section class="products">
+
+    <h2>Featured Watches</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <img src="images/image.png">
+            <h3>Rolex</h3>
+            <p>$2500</p>
+        </div>
+
+        <div class="card">
+            <img src="images/image copy.png">
+            <h3>Omega</h3>
+            <p>$2200</p>
+        </div>
+
+        <div class="card">
+            <img src="images/image copy 2.png">
+            <h3>Tissot</h3>
+            <p>$1800</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Luxury Watch. All Rights Reserved.</p>
+</footer>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:black;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:60px;
+    flex-wrap:wrap;
+}
+
+.text h1{
+    font-size:50px;
+}
+
+.text p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+button{
+    padding:12px 25px;
+    background:gold;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:white;
+}
+
+.image img{
+    width:350px;
+}
+
+.products{
+    text-align:center;
+    padding:50px;
+}
+
+.card-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#222;
+    padding:20px;
+    border-radius:10px;
+    width:220px;
+}
+
+.card img{
+    width:100%;
+}
+
+.card h3{
+    margin-top:10px;
+}
+
+.card p{
+    color:gold;
+    margin-top:10px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:black;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.text h1{
+    font-size:35px;
+}
+
+.image img{
+    width:250px;
+    margin-top:30px;
+}
+
+}
+</style>
+<script>
+    const button = document.getElementById("btn");
+
+button.addEventListener("click", function () {
+    alert("Welcome to Luxury Watch Store!");
+});
+</script>
+</body>
+</html>
